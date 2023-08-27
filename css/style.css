@@ -1,0 +1,149 @@
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background: url(eclipse_by_sheldon227.jpg) top left / cover no-repeat;
+    }
+
+    main {
+      margin: auto;
+      padding: 40px;
+      font-size: 18px;
+    }
+
+    .container {
+      background: rgb(255 255 255 / 89%);
+      padding: 20px 40px;
+      max-width: 1000px;
+    }
+
+    section {
+      border-bottom: 1px solid #222;
+      margin-bottom: 20px;
+    }
+
+    .aside {
+      order: 2;
+      /*added so the about me section will be on the right*/
+    }
+
+    .float-left {
+      float: left;
+    }
+
+    .cf:after {
+      clear: both;
+    }
+
+    .cf:before,
+    .cf:after {
+      content: "";
+      display: table;
+    }
+
+    .cf {
+      zoom: 1;
+    }
+
+    .header-main {
+      background: #222;
+      color: #f2f2f2;
+      display: flex;
+      gap: 0.5rem;
+      /*turn header into flex box instead of grid*/
+    }
+
+    .header-main-img {
+      height: 200px;
+      margin: 10px;
+      align-self: center;
+    }
+
+    .newsletter-form {
+      background: #ccc;
+      padding: 20px 40px;
+    }
+
+    .newsletter-form * {
+      display: block;
+      width: 100%;
+    }
+
+    .newsletter-form-inputbox {
+      background: none;
+      border: 0;
+      border-left: #222 5px solid;
+      border-bottom: #222 2px solid;
+      margin: 10px 0 20px;
+      text-indent: 20px;
+    }
+
+    .newsletter-form input {
+      height: 40px;
+      margin-bottom: 10px;
+    }
+
+    .newsletter-form-inputbox {
+      background: none;
+      border: 0;
+      border-left: #222 5px solid;
+      border-bottom: #222 2px solid;
+      margin: 10px 0 20px;
+    }
+
+    .newsletter-form input[type="submit"] {
+      background-color: #365b87;
+      color: #fff;
+      font-weight: bold;
+      height: 40px;
+    }
+
+    .newsletter-form input[type="submit"]:hover {
+      background-color: #222;
+      color: #fff;
+      font-weight: bold;
+      transition: 1s;
+      /*add transition: for form hover;*/
+    }
+    }
+
+    .newsletter-form-heading {
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 1.5rem;
+    }
+
+    h2,
+    .newsletter-form-heading {
+      color: #365b87;
+      border-bottom: 1px solid;
+    }
+
+    .social-media {
+      padding: 20px 40px;
+      border-radius: 5px;
+      background: #222;
+      color: #f2f2f2;
+      text-align: center;
+    }
+
+    .social-media a {
+      color: #f2f2f2;
+      margin: 0 10px;
+    }
+
+    @media screen and (max-width:720px) {
+      .header-main-img {
+        height: 250px;
+        /*change the height so the text will flow better in a smaller window*/
+      }
+    }
+
+    @media screen and (max-width:920px) {
+      main.grid {
+        display: block;
+        /*remove the grid display for smaller windows*/
+      }
+    }
