@@ -17,8 +17,7 @@
       <p>On this site you will find my blog a section about along with a way to contact me. You can also find a news letter form</p>
     </div>
   </header>
-    <nav><a href="index.html">Home</a> <a href="about.html">About Me</a> <a href="contact.html">Contact Me</a> <a href="projects.html">Projects</a><button id="modal-button">Signup</button></nav>
-
+  <nav><a href="index.html">Home</a> <a href="about.html">About Me</a> <a href="contact.html">Contact Me</a> <a href="projects.html">Projects</a><button class="signup-button modal-button">Signup</button></nav>
   <main class="grid">
     <div class="aside">
       <section class="container">
@@ -48,18 +47,18 @@
       </section>
       <section class="newsletter-form modal is-hidden">
         <form action="">
+          <button title="close" class="close modal-button">&#215;</button>
           <h3 class="newsletter-form-heading">Sign up for my newsletter</h3>
           <label for="name">Name</label>
           <input type="text" id="name" name="name" class="newsletter-form-inputbox">
           <label for="email">Email</label>
           <input type="email" name="email" class="newsletter-form-inputbox">
-          <input type="submit" value="Signup" id="modal-button">
+          <input type="submit" value="Signup">
         </form>
       </section>
     </div>
   </main>
   <script src="scripts/script.js"></script>
-
 </body>
 
 </html>

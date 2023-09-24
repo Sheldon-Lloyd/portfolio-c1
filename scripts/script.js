@@ -1,10 +1,21 @@
-const modalButton = getElementById(modal-button)
+const modalButton = document.querySelector('.modal-button');
+const closeButton = document.querySelector('.close');
 const modal = document.querySelector('.modal');
+function toggleModal(){
 
-function toggleModal(e){
-
-e.classList.toggle('is-hidden');
+modal.classList.toggle('is-hidden');
 
 }
 
-modalButton.addEventListener('click',toggleModal(modal))
+modalButton.addEventListener('click',function () {
+    toggleModal()
+});
+closeButton.addEventListener('click',function (e) {
+    e.preventDefault();
+    toggleModal()
+});
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 27) {
+    modal.classList.add('is-hidden');
+  }
+});
