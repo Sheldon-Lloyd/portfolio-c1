@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="css/style.css">
-  <title>Sheldon Lloyd - Personal Website</title>
+  <title>Sheldon Lloyd - Contact</title>
   <meta  content="">
 </head>
 
@@ -20,19 +20,54 @@
     <nav><a href="index.html">Home</a> <a href="about.html">About Me</a> <a href="contact.html">Contact Me</a> <a href="projects.html">Projects</a></nav>
 
   <main class="grid">
-    <div>
-      <section class="newsletter-form">
-        <form action="">
-          <h3 class="newsletter-form-heading">Sign up for my newsletter</h3>
+    <!--div>
+      <section class="contact-form">
+        <form action="" id="contact-form">
+          <h2 class="newsletter-form-heading">Contact Form</h2>
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" class="newsletter-form-inputbox">
+          <input type="text" id="name" name="name" autocomplete="name" required>
           <label for="email">Email</label>
-          <input type="email" name="email" class="newsletter-form-inputbox">
-          <input type="submit" value="Signup">
+          <input type="email" name="email" required >
+
+          <textarea name="" id="" style="height:500px" required></textarea>
+          
+          <input type="submit" value="Submit" id="contact-submit">
         </form>
       </section>
-    </div>
+    </div-->
+    <section>
+
+    <form id="contact-form" novalidate>
+    <div id="prompt-sucess">Form successfully submitted!</div>
+      <div>
+        <label for="firstName" class="form-label">First name </label>
+        <input type="text" id="firstName" name="firstName" class="form-control" required>
+        <small class="error-msg invalid-feedback">Required</small>
+      </div>
+      <div>
+        <label for="lastName" class="form-label">Last name </label>
+        <input type="text" id="lastName" name="lastName" class="form-control" required>
+        <small class="error-msg invalid-feedback">Required</small>
+      </div>
+      <div>
+        <label for="email" class="form-label">Email </label>
+        <input type="email" id="email" name="email" class="form-control" autocomplete="email" required>
+        <small class="error-msg invalid-feedback">Required</small>
+      </div>
+      <div>
+        <label>Message</label>
+        <textarea name="message"  class="form-control" id="" style="height:500px" required></textarea>
+
+      </div>
+    
+
+      <div class="form-btns">
+        <button type="submit" class="contact-submit" disabled>Submit</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+    </section>
   </main>
 </body>
-
+  <script src="contact.js"></script>
 </html>
