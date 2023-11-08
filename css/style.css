@@ -215,6 +215,13 @@ button[disabled]{
 }
 .feature-list li{
   position: relative;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: baseline;
+}
+.task-check-label {
+  flex-grow: 1;
+  padding: 10px;
 }
 .projects{
   display: flex;
